@@ -98,7 +98,7 @@ input:checked{
 }
 /*pseudo-selector*/
 input:checked:before{
-    content: "";
+    
     width: 10px;
     height: 10px;
     display: block;
@@ -109,6 +109,7 @@ input:checked:before{
 
 #acertos {
     text-align: center;
+    color: #888;
     background-color: #A3E635;
     position: fixed;
     bottom: 0;
