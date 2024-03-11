@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600&family=Roboto&display=swap');
 
-*,:root {
+*,
+:root {
     font-family: 'Inter', sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 
 }
+
 body {
     background-color: #0f172A;
     color: #fff;
@@ -20,32 +22,33 @@ main {
     margin: 0 auto 64px;
 }
 
-header{
+header {
     margin-top: 64px;
     padding-bottom: 24px;
     border-bottom: 1px solid #334155;
 }
-.logo img{
+
+.logo img {
     width: 40px;
 }
 
-header h1{
+header h1 {
     margin-top: 24px;
     font-size: 30px;
 }
 
-#quiz{
+#quiz {
     counter-reset: quiz-item;
 }
 
-.quiz-item{
+.quiz-item {
     margin-top: 24px;
     border: 1px solid #475549;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.quiz-item h3{
+.quiz-item h3 {
     padding: 16px 20px;
     display: flex;
     align-items: center;
@@ -53,8 +56,8 @@ header h1{
     background-color: #1e2938;
 }
 
-.quiz-item h3::before{
-    counter-increment:quiz-item;
+.quiz-item h3::before {
+    counter-increment: quiz-item;
     content: counter(quiz-item);
     background-color: #475549;
     width: 28px;
@@ -63,25 +66,25 @@ header h1{
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 }
 
-.quiz-item dl{
+.quiz-item dl {
     padding: 20px 24px;
     display: grid;
     gap: 8px;
 }
 
-.quiz-item dl dt{
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing:0 ;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.quiz-item dl dt {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-input{
+input {
     all: unset;
     border: 1px solid #94A3B8;
     width: 16px;
@@ -93,23 +96,24 @@ input{
     flex-shrink: 0;
 }
 
-input:checked{
-    border:1px solid #334155;
+input:checked {
+    border: 1px solid #A3E635;
 }
+
 /*pseudo-selector*/
-input:checked:before{
-    
+input:checked {
+
     width: 10px;
     height: 10px;
     display: block;
     background-color: #A3E635;
     border-radius: 50%;
-    
+
 }
 
 #acertos {
     text-align: center;
-    color: #888;
+    color: #666;
     background-color: #A3E635;
     position: fixed;
     bottom: 0;
